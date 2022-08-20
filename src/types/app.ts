@@ -9,4 +9,5 @@ export type User = {
   name: string;
   lastName: string;
   rol: string;
+  password: string;
 };

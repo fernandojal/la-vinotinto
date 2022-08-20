@@ -1,5 +1,6 @@
 // Vendors
 import { TextField } from '@mui/material';
+import { HTMLInputTypeAttribute } from 'react';
 import {
   Controller,
   FieldValues,
@@ -13,6 +14,7 @@ interface TextInputProps<T> extends UseControllerProps<T> {
   size?: 'small' | 'medium';
   InputProps?: any;
   multiline?: boolean;
+  type?: HTMLInputTypeAttribute;
 }
 
 export const TextInput = <T extends FieldValues>(props: TextInputProps<T>) => {
@@ -27,6 +29,7 @@ export const TextInput = <T extends FieldValues>(props: TextInputProps<T>) => {
           <TextField
             label={props.label}
             variant="outlined"
+            type={props.type ?? 'text'}
             onChange={onChange}
             value={value || ''}
             helperText={props.helperText || ''}

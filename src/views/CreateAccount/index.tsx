@@ -1,12 +1,14 @@
 //Vendors
 
 // Components
+import { AuthContainer } from 'components/containers/AuthContainer';
+import { CreateAccountForm } from './parts/CreateAccountForm';
 
 const CreateAccount = () => {
   return (
-    <div>
-      <h1>Hola Mundo crear cuenta</h1>
-    </div>
+    <AuthContainer title="Crear Cuenta">
+      <CreateAccountForm />
+    </AuthContainer>
   );
 };
 

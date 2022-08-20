@@ -1,12 +1,14 @@
 //Vendors
 
 // Components
+import { FormLogin } from './parts/FormLogin';
+import { AuthContainer } from 'components/containers/AuthContainer';
 
 const SignIn = () => {
   return (
-    <div>
-      <h1>SignIn login</h1>
-    </div>
+    <AuthContainer title="Iniciar sesión">
+      <FormLogin />
+    </AuthContainer>
   );
 };
 

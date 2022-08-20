@@ -1,6 +1,3 @@
-// Vendors
-import { ThemeProvider } from '@mui/material';
-
 // Components
 import RoutesContainer from 'components/containers/RoutesContainer';
 
@@ -29,12 +26,10 @@ const views = {
 
 function App() {
   return (
-    <ThemeProvider theme={{}}>
-      <ModalProvider>
-        <RoutesContainer listRoutes={allRoutes} views={views} />
-        <AppModal />
-      </ModalProvider>
-    </ThemeProvider>
+    <ModalProvider>
+      <RoutesContainer listRoutes={allRoutes} views={views} />
+      <AppModal />
+    </ModalProvider>
   );
 }
 

@@ -3,7 +3,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
-    colors: {},
+    colors: {
+      white: {
+        DEFAULT: '#FFF',
+      },
+      test: {
+        DEFAULT: 'antiquewhite',
+      },
+    },
     fontFamily: {
       lato: ['Lato'],
     },
