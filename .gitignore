@@ -1,0 +1,16 @@
+# Lint
+eslint-report.json
+.eslintcache
+/dist/
+/envs/
+
+#editor
+.vscode
+
+#Yarn error log
+yarn-error.log
+
+
+#node modules
+
+node_modules/
