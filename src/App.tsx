@@ -18,6 +18,9 @@ import { ModalProvider } from 'context/ModalContext';
 // Components
 import { AppModal } from 'components/modal/Modal';
 
+//Style
+import 'assets/css/styles.css';
+
 const views = {
   Home,
   CreateAccount,

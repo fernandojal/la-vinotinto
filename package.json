@@ -12,10 +12,6 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.11.49",
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
     "axios": "^0.27.2",
     "jsonwebtoken": "^8.5.1",
     "react": "^18.2.0",
@@ -52,20 +48,24 @@
     ]
   },
   "devDependencies": {
-    "@types/jest": "^26.0.15",
     "@types/jsonwebtoken": "^8.5.6",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.49",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
     "@types/react-redux": "^7.1.20",
     "@types/react-router-dom": "^5.3.2",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.33.1",
+    "autoprefixer": "^10.4.8",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^22.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.30.1"
+    "eslint-plugin-react": "^7.30.1",
+    "postcss": "^8.4.16",
+    "stylelint-config-recommended": "^9.0.0",
+    "tailwindcss": "^3.1.8"
   }
 }
