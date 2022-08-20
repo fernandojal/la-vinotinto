@@ -9,7 +9,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 if (process.env.SERVICE_MOCK) {
-  const { worker } = require('../mocks/browser');
+  const { worker } = require('./mocks/browser');
   worker.start();
 }
 
