@@ -25,9 +25,6 @@ interface IRoutesRootProps {
 const RoutesContainer: React.FC<IRoutesRootProps> = ({ listRoutes, views }) => {
   const isAuthenticated = false;
 
-  console.log(views);
-  console.log(listRoutes);
-
   return (
     <Switch>
       {listRoutes.map((route: routeInformation, key: number) => {

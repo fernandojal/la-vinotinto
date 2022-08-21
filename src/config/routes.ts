@@ -28,4 +28,10 @@ export const allRoutes: routeInformation[] = [
     component: 'SignIn',
     type: typeRoutes.login,
   },
+  {
+    label: 'Cuestionario',
+    path: '/cuestionario',
+    component: 'Questions',
+    type: typeRoutes.login,
+  },
 ];
