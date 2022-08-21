@@ -5,6 +5,7 @@ import RoutesContainer from 'components/containers/RoutesContainer';
 import Home from 'views/Home';
 import CreateAccount from 'views/CreateAccount';
 import SignIn from 'views/SignIn/SignIn';
+import Questions from 'views/Questionnaire/Questions';
 
 // Contants
 import { allRoutes } from 'config/routes';
@@ -22,6 +23,7 @@ const views = {
   Home,
   CreateAccount,
   SignIn,
+  Questions,
 };
 
 function App() {

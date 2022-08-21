@@ -15,5 +15,8 @@ yarn-error.log
 
 node_modules/
 
-
+#envairoments
 .env
+
+#mac file
+.DS_Store
