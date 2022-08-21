@@ -1,16 +1,13 @@
 //Vendors
-import { Box, Container } from '@mui/system';
+import { Container } from '@mui/system';
 
-//Api
-import { GET_QUESTIONS } from 'api/requests/Questions';
+//Components
+import { Quiz } from './parts/Quiz';
 
 const Questions = () => {
-  const response = GET_QUESTIONS();
-
-  console.log({ response });
   return (
     <Container>
-      <Box></Box>
+      <Quiz />
     </Container>
   );
 };

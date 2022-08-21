@@ -8,7 +8,7 @@ import App from './App';
 // Store
 import reportWebVitals from './reportWebVitals';
 
-if (process.env.REACT_APP_SERVICE_MOCK) {
+if (true) {
   const { worker } = require('./mocks/browser');
   worker.start();
 }

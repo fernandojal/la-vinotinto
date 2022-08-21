@@ -11,3 +11,5 @@ export type User = {
   rol: string;
   password: string;
 };
+
+export type Identify = string | number;

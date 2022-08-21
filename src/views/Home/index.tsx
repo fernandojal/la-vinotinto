@@ -10,6 +10,8 @@ const Home = (): JSX.Element => {
 
         <Link to="/crear-cuenta">Ir a crear cuenta</Link>
         <Link to="/iniciar-sesion"> sesion</Link>
+
+        <Link to="/cuestionario"> Cuestionario</Link>
       </Container>
     </section>
   );
