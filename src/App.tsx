@@ -1,3 +1,7 @@
+//Vendors
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+
 // Components
 import RoutesContainer from 'components/containers/RoutesContainer';
 
@@ -30,10 +34,12 @@ const views = {
 
 function App() {
   return (
-    <ModalProvider>
-      <RoutesContainer listRoutes={allRoutes} views={views} />
-      <AppModal />
-    </ModalProvider>
+    <DndProvider backend={HTML5Backend}>
+      <ModalProvider>
+        <RoutesContainer listRoutes={allRoutes} views={views} />
+        <AppModal />
+      </ModalProvider>
+    </DndProvider>
   );
 }
 

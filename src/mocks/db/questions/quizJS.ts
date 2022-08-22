@@ -63,3 +63,27 @@ export const QUIZ_JS = {
     },
   ],
 };
+
+export const GRAPH_T = {
+  wings: [
+    {
+      nameWings: 'Design UI',
+    },
+    {
+      nameWings: 'Front End',
+      skills: [
+        {
+          skillName: 'Javascript',
+          percent: 80,
+        },
+        {
+          skillName: 'CSS',
+          percent: 100,
+        },
+      ],
+    },
+    {
+      nameWings: 'Back End',
+    },
+  ],
+};

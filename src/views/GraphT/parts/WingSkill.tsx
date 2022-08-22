@@ -6,7 +6,7 @@ import { BlockSkill } from './BlockSkill';
 
 type Props = {
   name: string;
-  skills?: { skillName: string }[];
+  skills?: { skillName: string; percent: number }[];
 };
 
 export const WingSkill = ({ name, skills }: Props) => (
@@ -17,8 +17,8 @@ export const WingSkill = ({ name, skills }: Props) => (
       </Typography>
     </div>
     {skills &&
-      skills.map(({ skillName }, index) => (
-        <BlockSkill name={skillName} key={index} />
+      skills.map(({ skillName, percent }, index) => (
+        <BlockSkill name={skillName} percent={percent} key={index} />
       ))}
   </div>
 );
