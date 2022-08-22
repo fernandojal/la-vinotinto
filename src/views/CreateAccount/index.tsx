@@ -14,7 +14,7 @@ const CreateAccount = () => {
           <img className="d-inline-block align-top" src={LogoNavBar} alt=""/>
         </Link>
       </nav>
-      <AuthContainer title="Crear Cuenta">
+      <AuthContainer title="Crea tu perfil">
         <CreateAccountForm />
       </AuthContainer>
     </section>

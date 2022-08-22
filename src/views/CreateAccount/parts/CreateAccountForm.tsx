@@ -44,6 +44,9 @@ export const CreateAccountForm = () => {
           control={control}
           rules={{ required: true }}
         />
+        <Typography className='span-nicknme'>
+          Este podría ser tu nombre o un apodo; como quieras que la gente se refiera a ti en Acrópolis
+        </Typography>
         <TextInput
           label="SAP"
           name="sap"
@@ -92,10 +95,7 @@ export const CreateAccountForm = () => {
           rules={{ required: true }}
         /> */}
 
-
-
-
-        <LoadingButton type="submit" variant="contained">
+        <LoadingButton type="submit" variant="contained" id='button-submit-account'>
           Crear cuenta
         </LoadingButton>
       </Stack>

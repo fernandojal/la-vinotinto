@@ -167,3 +167,24 @@ html, body, #root, .App, .MuiContainer-root, .min-h-screen {
   align-content: center;
   height: 126px;
 }
+
+#button-submit-account{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #5838B5!important;
+  box-shadow: -9.90885px -9.90885px 19.8177px rgba(255, 255, 255, 0.5), 9.90885px 9.90885px 19.8177px rgba(170, 170, 204, 0.25), 19.8177px 19.8177px 39.6354px rgba(170, 170, 204, 0.5), -19.8177px -19.8177px 39.6354px #FFFFFF!important;
+  border-radius: 14.5844px!important;
+}
+
+.span-nicknme{
+  margin-top: 8px!important;
+  font-size: 12px!important;
+}
+
+.title-create-account{
+  color: #5838B5;
+  font-family: 'Poppins'!important;
+  font-style: normal;
+  font-weight: 700!important;
+  font-size: 40px!important;
+  line-height: 60px!important;
+  text-align: center;
+}

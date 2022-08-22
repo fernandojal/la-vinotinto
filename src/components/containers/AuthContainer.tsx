@@ -14,8 +14,8 @@ export const AuthContainer = ({ title, children }: Props) => {
         <Paper className="p-5 w-full h-full" elevation={8}>
           <section className="grid h-full">
             <Typography
-              align="center"
-              className="font-bold font-lato"
+              // align="center"
+              className="font-bold font-lato title-create-account"
               variant="h4"
             >
               {title}
