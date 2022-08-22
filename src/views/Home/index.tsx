@@ -6,6 +6,10 @@ import HomeCardOwl  from '../../assets/images/logo_owl.png';
 import HomeCardLight  from '../../assets/images/logo_light.png';
 import $ from 'jquery';
 
+//Assets
+import HomeAteneaLogo from 'assets/images/logo_atenea_home.png';
+import HomeCardOwl from 'assets/images/logo_owl.png';
+import HomeCardLight from 'assets/images/logo_light.png';
 
 const Home = (): JSX.Element => {
   return (

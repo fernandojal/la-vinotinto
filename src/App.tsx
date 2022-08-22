@@ -1,3 +1,7 @@
+//Vendors
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+
 // Components
 import RoutesContainer from 'components/containers/RoutesContainer';
 
@@ -6,6 +10,7 @@ import Home from 'views/Home';
 import CreateAccount from 'views/CreateAccount';
 import SignIn from 'views/SignIn/SignIn';
 import Questions from 'views/Questionnaire/Questions';
+import GraphT from 'views/GraphT/GraphT';
 
 // Contants
 import { allRoutes } from 'config/routes';
@@ -24,14 +29,17 @@ const views = {
   CreateAccount,
   SignIn,
   Questions,
+  GraphT,
 };
 
 function App() {
   return (
-    <ModalProvider>
-      <RoutesContainer listRoutes={allRoutes} views={views} />
-      <AppModal />
-    </ModalProvider>
+    <DndProvider backend={HTML5Backend}>
+      <ModalProvider>
+        <RoutesContainer listRoutes={allRoutes} views={views} />
+        <AppModal />
+      </ModalProvider>
+    </DndProvider>
   );
 }
 

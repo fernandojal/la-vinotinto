@@ -14,6 +14,7 @@ export const QUIZ_JS = {
         {
           id: '2',
           answer: 'number',
+          isCorrect: true,
         },
         {
           id: '3',
@@ -32,6 +33,7 @@ export const QUIZ_JS = {
         {
           id: '1',
           answer: 'HelloTwitter\nworld',
+          isCorrect: true,
         },
         {
           id: '2',
@@ -55,8 +57,33 @@ export const QUIZ_JS = {
         {
           id: '2',
           answer: 'false',
+          isCorrect: true,
         },
       ],
+    },
+  ],
+};
+
+export const GRAPH_T = {
+  wings: [
+    {
+      nameWings: 'Design UI',
+    },
+    {
+      nameWings: 'Front End',
+      skills: [
+        {
+          skillName: 'Javascript',
+          percent: 80,
+        },
+        {
+          skillName: 'CSS',
+          percent: 100,
+        },
+      ],
+    },
+    {
+      nameWings: 'Back End',
     },
   ],
 };
