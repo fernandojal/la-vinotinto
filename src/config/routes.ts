@@ -34,4 +34,10 @@ export const allRoutes: routeInformation[] = [
     component: 'Questions',
     type: typeRoutes.login,
   },
+  {
+    label: 'Gráfico de habilidades',
+    path: '/grafico-habilidades',
+    component: 'GraphT',
+    type: typeRoutes.login,
+  },
 ];

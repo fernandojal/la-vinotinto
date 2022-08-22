@@ -7,6 +7,12 @@ module.exports = {
       white: {
         DEFAULT: '#FFF',
       },
+      blue: {
+        DEFAULT: '#00A8E8',
+        light: '#007EA7',
+        dark: '#003459',
+        darker: '#00171F',
+      },
       test: {
         DEFAULT: 'antiquewhite',
       },

@@ -11,23 +11,34 @@ import { QUIZ_JS } from 'mocks/db/questions/quizJS';
 
 //Component
 import { ProgressQuiz } from './ProgressQuiz';
+import { Result } from './Result';
+import { findAnswer } from 'utils/questions';
+import { off } from 'process';
 
 //Types
 
 export const Quiz = () => {
   const [currentQuestion, setCurrentQuestions] = useState<number>(0);
-  const { handleSubmit, control } = useForm<{ quiz: string }>();
+  const [correctAnswers, setCorrectAnswers] = useState<string[]>([]);
+  const { handleSubmit, control, watch, reset } = useForm<{ answer: string }>();
+  const answerValue = watch('answer');
 
   const { title, questions } = QUIZ_JS;
 
-  const isLastQuestion = questions.length === currentQuestion;
+  const totalQuestions = questions.length;
+  const isLastQuestion = totalQuestions === currentQuestion;
 
-  const onSubmit = handleSubmit(({ quiz }) => {
+  const onSubmit = handleSubmit(({ answer }) => {
+    const currentAnswer = findAnswer(questions[currentQuestion], answer);
+
+    if (currentAnswer?.isCorrect) {
+      setCorrectAnswers([...correctAnswers, answer]);
+    }
+
     setCurrentQuestions(currentQuestion + 1);
-    console.log({ quiz });
-  });
 
-  console.log(currentQuestion, questions.length);
+    reset();
+  });
 
   return (
     <Box>
@@ -35,7 +46,7 @@ export const Quiz = () => {
       {!isLastQuestion ? (
         <form onSubmit={onSubmit} className="mt-4 py-4 ">
           <Controller
-            name="quiz"
+            name="answer"
             control={control}
             render={({ field: { onChange, value } }) => (
               <RadioGroup value={value} onChange={onChange}>
@@ -50,15 +61,25 @@ export const Quiz = () => {
               </RadioGroup>
             )}
           />
-          <LoadingButton type="submit" variant="contained">
+          <LoadingButton
+            type="submit"
+            variant="contained"
+            disabled={!answerValue}
+          >
             Responder
           </LoadingButton>
         </form>
       ) : (
-        <Typography>fin quiz</Typography>
+        <Result
+          totalAnswersCorrect={correctAnswers.length}
+          totalQuestions={totalQuestions}
+        />
       )}
 
-      <ProgressQuiz />
+      <ProgressQuiz
+        currentQuestion={currentQuestion}
+        totalQuestions={totalQuestions}
+      />
     </Box>
   );
 };

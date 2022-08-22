@@ -10,4 +10,5 @@ export interface TQuestion {
 export type Answer = {
   id: Identify;
   answer: string;
+  isCorrect?: boolean;
 };

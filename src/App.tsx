@@ -6,6 +6,7 @@ import Home from 'views/Home';
 import CreateAccount from 'views/CreateAccount';
 import SignIn from 'views/SignIn/SignIn';
 import Questions from 'views/Questionnaire/Questions';
+import GraphT from 'views/GraphT/GraphT';
 
 // Contants
 import { allRoutes } from 'config/routes';
@@ -24,6 +25,7 @@ const views = {
   CreateAccount,
   SignIn,
   Questions,
+  GraphT,
 };
 
 function App() {
