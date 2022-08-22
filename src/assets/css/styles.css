@@ -62,6 +62,7 @@ html, body, #root, .App, .MuiContainer-root, .min-h-screen {
   height: 100%!important;
   background-size: contain;
   display: flex!important;
+  align-items: center;
 }
 
 .home-content {
@@ -106,6 +107,11 @@ html, body, #root, .App, .MuiContainer-root, .min-h-screen {
   border-radius: 8.49524px;
   width: 249.07154846191406px;
   margin: 0px 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 145px;
 }
 
 .card-body{
@@ -114,6 +120,9 @@ html, body, #root, .App, .MuiContainer-root, .min-h-screen {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 90%;
+  position: relative;
+  height: 100%;
 }
 
 .home-content-cards a:hover{
@@ -126,6 +135,7 @@ html, body, #root, .App, .MuiContainer-root, .min-h-screen {
   font-weight: 700;
   font-size: 17.7308px;
   line-height: 24px;
+  margin: 8px;
   /* identical to box height */
 
   text-align: center;
@@ -144,6 +154,7 @@ html, body, #root, .App, .MuiContainer-root, .min-h-screen {
   font-weight: 500;
   font-size: 13.3612px;
   line-height: 17px;
+  margin: 8px;
   /* identical to box height */
 
   text-align: center;
@@ -157,8 +168,8 @@ html, body, #root, .App, .MuiContainer-root, .min-h-screen {
   width: 58px;
   height: 58px;
   position: absolute;
-  left: 177px;
-  top: 17px;
+  top: -32px;
+  right: 4px;
 }
 
 .nav-create-account{
