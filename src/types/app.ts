@@ -10,6 +10,11 @@ export type User = {
   lastName: string;
   rol: string;
   password: string;
+  nickname: string;
+  sap: number;
+  carnet: string;
+  position: string;
+  company: string;
 };
 
 export type Identify = string | number;

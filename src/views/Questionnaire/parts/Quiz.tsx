@@ -58,7 +58,7 @@ export const Quiz = () => {
         <Typography>fin quiz</Typography>
       )}
 
-      <ProgressQuiz />
+      {/* <ProgressQuiz /> */}
     </Box>
   );
 };

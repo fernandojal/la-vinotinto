@@ -16,7 +16,7 @@ a {
   @apply no-underline;
 }
 
-#logo-atenea-home{
+.logo-atenea-home{
   width:833px;
   height:552px;
 }
@@ -26,8 +26,8 @@ a {
   
   }
 
-#home{
-  /* margin: 0; */
+.rootIndex{
+  margin: 0;
   background-image: url('../images/banner_home.png');
   background-size: 1800px;
   height: 100%;
@@ -45,26 +45,30 @@ html, body, #root, .App, .MuiContainer-root, .min-h-screen {
   height: 100%;
 }
 
-.d-flex{
+/* .d-flex{
   position: absolute;
   display: flex!important;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   top: 55px;
   left: -15px;
-}
+} */
 
-.MuiContainer-root{
+.acropolisImage{
   background-image: url('../images/acropolis_background.png');
   background-repeat: no-repeat;
   margin-left: 0px!important;
+  height: 100%!important;
+  background-size: contain;
+  display: flex!important;
 }
 
 .home-content {
-  display: flex;
+  display: flex!important;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -120,7 +124,7 @@ html, body, #root, .App, .MuiContainer-root, .min-h-screen {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-size: 15.7308px;
+  font-size: 17.7308px;
   line-height: 24px;
   /* identical to box height */
 
@@ -138,7 +142,7 @@ html, body, #root, .App, .MuiContainer-root, .min-h-screen {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  font-size: 11.3612px;
+  font-size: 13.3612px;
   line-height: 17px;
   /* identical to box height */
 
@@ -155,4 +159,11 @@ html, body, #root, .App, .MuiContainer-root, .min-h-screen {
   position: absolute;
   left: 177px;
   top: 17px;
+}
+
+.nav-create-account{
+  background-image: url('../images/banner_home.png');
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  align-content: center;
+  height: 126px;
 }
