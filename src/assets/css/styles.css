@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
@@ -13,4 +14,145 @@ body {
 
 a {
   @apply no-underline;
+}
+
+#logo-atenea-home{
+  width:833px;
+  height:552px;
+}
+@media screen and (max-width: 1380px) { 
+
+  #logo-atenea-home { display: none; }  
+  
+  }
+
+#home{
+  /* margin: 0; */
+  background-image: url('../images/banner_home.png');
+  background-size: 1800px;
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+#home-content{
+  display: flex!important;
+  flex-direction: column!important;
+
+}
+
+html, body, #root, .App, .MuiContainer-root, .min-h-screen {
+  height: 100%;
+}
+
+.d-flex{
+  position: absolute;
+  display: flex!important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  top: 55px;
+  left: -15px;
+}
+
+.MuiContainer-root{
+  background-image: url('../images/acropolis_background.png');
+  background-repeat: no-repeat;
+  margin-left: 0px!important;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.home-content-h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46.1422px;
+  line-height: 69px;
+
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 51.56%), #004E9B;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  }
+
+.home-content-p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27.9405px;
+  line-height: 45px;
+  color: #F5F5FA;
+}
+
+.home-content-cards{
+  display: flex;
+  flex-direction: row!important;
+  flex-flow: nowrap;
+  margin-top: 25px;
+}
+
+.card{
+  background: linear-gradient(94.81deg, #A640FE 2.7%, #7C41F7 32.24%, #3A7AF0 68.39%, #0FC3ED 94.14%);
+  border-radius: 8.49524px;
+  width: 249.07154846191406px;
+  margin: 0px 16px;
+}
+
+.card-body{
+  background: white;
+  margin: 42px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.home-content-cards a:hover{
+  color: inherit;
+}
+
+.card-body-title{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.7308px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Gradiente Azul */
+
+  background: linear-gradient(0.05deg, #00519D 0.06%, #0073B8 45.32%, #0093D1 95.26%), linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 51.56%), #004E9B;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-body-subtitle{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11.3612px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Gris Iconos */
+
+  color: #596774;
+}
+
+#logo-card-home{
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  left: 177px;
+  top: 17px;
 }
